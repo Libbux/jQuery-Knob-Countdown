@@ -1,14 +1,14 @@
-jQuery-Knob-Countdown
-=====================
-* A simple, amazing jQuery countdown timer, visualized with jQuery Knob (aterrien/jQuery-Knob). Dates can be supplied in "DD-MON-YEAR-TIME" format (like "19 April 2013 16:24:00").
+#jQuery-Knob-Countdown
+---
+* A simple, *amazing* jQuery countdown timer plugin, visualized with jQuery Knob ([aterrien/jQuery-Knob] (http://github.com/aterrien/jQuery-Knob)). Dates can be supplied in `"DD-MON-YEAR-TIME"` format (like `19 April 2013 16:24:00`).
 * The plugin is modular, and can be adapted to fit almost any needs.
 * Lightweight & fast
 * Incredibly accurate
 * Cookie / Session free (harder to break, no problems with clearing cache)
 * Can be easily used to trigger a server-side event, for example, to execute a function when the countdown reaches zero.
 
----
-###Example:
+##Example
+=====================
 
 The Markup required to create a knob element:
 
@@ -28,6 +28,7 @@ The javascript required to apply the countdown plugin to that specific `.countdo
 $('.countdown').countdown( { date: '19 April 2013 16:24:00' } );
 
 ````
+Note: Date is parsed by jQuery, and must be supplied in the format shown in the example above.
 
 ##Contributers
 ====================
