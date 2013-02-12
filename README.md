@@ -8,4 +8,4 @@ jQuery-Knob-Countdown
 * Can be easily used to trigger a server-side event, for example, to execute a function when the countdown reaches zero.
 
 ---
-Example:
+###Example:
