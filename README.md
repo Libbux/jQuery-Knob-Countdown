@@ -28,3 +28,9 @@ The javascript required to apply the countdown plugin to that specific `.countdo
 $('.countdown').countdown( { date: '19 April 2013 16:24:00' } );
 
 ````
+
+##Contributers
+====================
+If your fork of the plugin gets pulled back in, I'll add you to this list.
+* [Jonathan Libby] (http://github.com/TheLibbster) - Everything so far!
+* Countdown logic based on example by [TheNewBoston] (http://www.youtube.com/user/thenewboston)
