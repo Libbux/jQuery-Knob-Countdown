@@ -1,0 +1,130 @@
+body {
+    font-family: 'OpenLight', 'Segoe UI Light', 'Segoe UI', Helvetica, Arial, sans-serif;
+    color:#CCC;
+    margin: 0;
+    padding: 0;
+    background: url('bgrnd.gif') repeat;
+}
+
+@media all and (min-width:1024px) and (min-height:600px) { /* Media query, which only allows desktops, laptops, and landscape iPads to see the gradient */
+
+body:before {
+    content: " ";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1
+    top: 0;
+    left: 0;
+    background: -webkit-radial-gradient( center, ellipse cover, rgba(255,255,255,0.2) 0%, rgba(0,0,0,0.3) 60%, rgba(0,0,0,0.4) 100%);
+}
+
+a {
+	color:#FFF;
+}
+
+a:hover {
+	color:#09F;
+}
+
+
+} /* End of the media query */
+
+@font-face {
+    font-family:OpenLight;
+    src: url('http://cs-static.cscdn.thelibbster.com/f/openlight.ttf');
+}
+
+.content {
+    position:relative;
+    margin:0 auto;
+    width:960px;
+    height:450px;
+    top:90px;
+   /* border:1px solid #900; */
+}
+
+
+#countdown {
+    position:relative;
+    top:130px;
+    padding-left: 60px;
+    color:#FFF;
+ /*   border:1px solid #009; */
+}
+
+#days {
+    position:relative;
+}
+
+#hours {
+    position:relative;
+}
+
+#mins {
+    position:relative;
+}
+
+#secs {
+    position:relative;
+}
+
+#descrip {
+    text-align: left;
+    position:relative;
+    top:150px;
+}
+
+#d-title {
+    text-align:center;
+    font-size: 2em;
+}
+
+#d-subtitle {
+    text-align: center;
+    font-size: 1.3em;
+    position: relative;
+    top:-15px;
+}
+
+#main-title {
+    position:absolute;
+    top:-100px;
+    width:100%;
+    text-align:center;
+ /*   border:1px solid #090; */
+}
+
+#main-title-t {
+    font-size: 4.0em;
+    color:#FFF;
+}
+
+#main-title-s {
+    position: relative;
+    top:-50px;
+    font-size: 2.0em;
+}
+#subtitles {
+
+}
+#days-sub {
+    position:relative;
+    left:80px;
+}
+
+#hours-sub {
+    position:relative;
+    left:250px;
+
+}
+
+#mins-sub {
+    position:relative;
+    left:405px;
+}
+
+#secs-sub {
+    position:relative;
+    left:555px;
+}

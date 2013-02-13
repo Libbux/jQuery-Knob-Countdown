@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>jQuery-Knob-Countdown - Demo</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<a href="https://github.com/TheLibbster"><img style="position: fixed; top: 0; left: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png" alt="Fork me on GitHub"></a>
+	<section class="content">
+		<div id="main-title">
+			<p id="main-title-t">jQuery Knob Countdown</p>
+			<p id="main-title-s">jQuery countdown timer using jQuery knob</p>
+		</div>
+
+		<div id="countdown" ms-user-select="none">
+			<input class="knob" id="days" data-readonly=true data-min="0" data-max="99" data-skin="tron" data-width="200" data-height="200" data-thickness="0.2" data-fgcolor="#FF574F">						
+			<input class="knob" id="hours" data-readonly=true data-min="0" data-max="24" data-skin="tron" data-width="200" data-height="200" data-thickness="0.2" data-fgcolor="#B3FF40">
+			<input class="knob" id="mins" data-readonly=true data-min="0" data-max="60" data-skin="tron" data-width="200" data-height="200" data-thickness="0.2" data-fgcolor="#575FFF">
+			<input class="knob" id="secs" data-readonly=true data-min="0" data-max="60" data-skin="tron" data-width="200" data-height="200" data-thickness="0.2" data-fgcolor="#E957FF">
+
+			<div id="subtitles">
+					<span id="days-sub">days</span>								
+					<span id="hours-sub">hours</span>
+					<span id="mins-sub">minutes</span>
+					<span id="secs-sub">seconds</span>
+			</div>
+		</div>
+		<article id="descrip">
+			<p id="d-title">It's pretty cool.</p>
+			<p id="d-subtitle">Impressed yet?</p>
+			<p id="d-descrip">
+				A simple, amazing jQuery countdown timer plugin, visualized with jQuery Knob (<a href="http://github.com/aterrien/jQuery-Knob">aterrien/jQuery-Knob</a>). Dates can be supplied in <code>DD-MON-YEAR-TIME</code> format (like <code>19 April 2013 16:24:00</code>).
+			<a href="https://github.com/TheLibbster/jQuery-Knob-Countdown">Take a look at the GitHub page!</a>
+			</p>
+		</article>
+
+	</section>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.knob.js"></script>
+	<script type="text/javascript" src="js/countdown.js"></script>
+	<script type="text/javascript" src="js/ext.js"></script>
+	
+    <!--
+    This script below is necessary. In future releases, I might merge it into the jquery.knob.js script.
+    -->
+    <script>
+            $(function() {
+
+                $(".knob").knob({
+                    change : function (value) {
+                        //console.log("change : " + value);
+                    },
+                    release : function (value) {
+                        //console.log(this.$.attr('value'));
+                        console.log("release : " + value);
+                    },
+                    cancel : function () {
+                        console.log("cancel : ", this);
+                    },
+                    draw : function () {
+
+                        // "tron" case
+                        if(this.$.data('skin') == 'tron') {
+
+                            var a = this.angle(this.cv)  // Angle
+                                , sa = this.startAngle          // Previous start angle
+                                , sat = this.startAngle         // Start angle
+                                , ea                            // Previous end angle
+                                , eat = sat + a                 // End angle
+                                , r = 1;
+
+                            this.g.lineWidth = this.lineWidth;
+
+                            this.o.cursor
+                                && (sat = eat - 0.3)
+                                && (eat = eat + 0.3);
+
+                            if (this.o.displayPrevious) {
+                                ea = this.startAngle + this.angle(this.v);
+                                this.o.cursor
+                                    && (sa = ea - 0.3)
+                                    && (ea = ea + 0.3);
+                                this.g.beginPath();
+                                this.g.strokeStyle = this.pColor;
+                                this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sa, ea, false);
+                                this.g.stroke();
+                            }
+
+                            this.g.beginPath();
+                            this.g.strokeStyle = r ? this.o.fgColor : this.fgColor ;
+                            this.g.arc(this.xy, this.xy, this.radius - this.lineWidth, sat, eat, false);
+                            this.g.stroke();
+
+                            this.g.lineWidth = 2;
+                            this.g.beginPath();
+                            this.g.strokeStyle = this.o.fgColor;
+                            this.g.arc( this.xy, this.xy, this.radius - this.lineWidth + 1 + this.lineWidth * 2 / 3, 0, 2 * Math.PI, false);
+                            this.g.stroke();
+
+                            return false;
+                        }
+                    }
+                });
+
+                // Example of infinite knob, iPod click wheel
+                var v, up=0,down=0,i=0
+                    ,$idir = $("div.idir")
+                    ,$ival = $("div.ival")
+                    ,incr = function() { i++; $idir.show().html("+").fadeOut(); $ival.html(i); }
+                    ,decr = function() { i--; $idir.show().html("-").fadeOut(); $ival.html(i); };
+                $("input.infinite").knob(
+                                    {
+                                    min : 0
+                                    , max : 20
+                                    , stopper : false
+                                    , change : function () {
+                                                    if(v > this.cv){
+                                                        if(up){
+                                                            decr();
+                                                            up=0;
+                                                        }else{up=1;down=0;}
+                                                    } else {
+                                                        if(v < this.cv){
+                                                            if(down){
+                                                                incr();
+                                                                down=0;
+                                                            }else{down=1;up=0;}
+                                                        }
+                                                    }
+                                                    v = this.cv;
+                                                }
+                                    });
+            });
+        </script>
+</body>
+</html>
