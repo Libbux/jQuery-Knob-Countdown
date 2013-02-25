@@ -35,3 +35,7 @@ Note: Date is parsed by jQuery, and must be supplied in the format shown in the 
 If your fork of the plugin gets pulled back in, I'll add you to this list.
 * [Jonathan Libby] (http://github.com/TheLibbster) - Everything so far!
 * Countdown logic based on example by [TheNewBoston] (http://www.youtube.com/user/thenewboston)
+
+## Contact
+=====================
+* I can be reached for specific help topics directly at jonathan.libby@yahoo.ca.
