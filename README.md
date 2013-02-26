@@ -38,4 +38,4 @@ If your fork of the plugin gets pulled back in, I'll add you to this list.
 
 ## Contact
 =====================
-* I can be reached for specific help topics directly at jonathan.libby@yahoo.ca.
+* I can be reached for specific help topics directly at [jonathan.libby@yahoo.ca] (mailto:jonathan.libby@yahoo.ca?Subject=jQuery-Knob-Countdown%20on%20GitHub&Body=Hello%2C%20I%20have%20a%20question%2C%20comment%2C%20or%20concern%20about%20jQuery-Knob-Countdown%20on%20GitHub%3A%0A%0A%0AThanks%21).
