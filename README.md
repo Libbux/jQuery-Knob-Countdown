@@ -12,7 +12,7 @@
 
 The Markup required to create a knob element:
 
-```HTML```
+```HTML
   <section class="countdown">
   <input class="knob" id="days" data-min="0" data-max="365">
   <input class="knob" id="hours" data-min="0" data-max="24">
@@ -23,7 +23,7 @@ The Markup required to create a knob element:
 
 The javascript required to apply the countdown plugin to that specific `.countdown` element:
 
-```javascript```
+```javascript
 
 $('.countdown').countdown( { date: '19 April 2013 16:24:00' } );
 
