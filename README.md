@@ -40,7 +40,7 @@ If your fork of the plugin gets pulled back in, I'll add you to this list.
 =====================
 © Jonathan Libby 2013.
 
-This work is licensed under the GPL v3 (gpl.txt).
+This work is licensed under the GPL v3 (``gpl.txt``).
 
     jQuery-Knob-Countdown is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
