@@ -36,6 +36,24 @@ If your fork of the plugin gets pulled back in, I'll add you to this list.
 * [Jonathan Libby] (http://github.com/TheLibbster) - Everything so far!
 * Countdown logic based on example by [TheNewBoston] (http://www.youtube.com/user/thenewboston)
 
+##License
+=====================
+© Jonathan Libby 2013.
+
+This work is licensed under the GPL v3 (gpl.txt).
+
+    jQuery-Knob-Countdown is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    jQuery-Knob-Countdown is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with jQuery-Knob-Countdown.  If not, see <http://www.gnu.org/licenses/>.
 ## Contact
 =====================
 * Feel free to contact for help, or if you have questions, concerns, or comments. I'll get back to you as soon as I can.
