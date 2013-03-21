@@ -57,4 +57,4 @@ This work is licensed under the GPL v3 (``gpl.txt``).
 ## Contact
 =====================
 * Feel free to contact for help, or if you have questions, concerns, or comments. I'll get back to you as soon as I can.
-* I can be reached for specific help topics directly at [jonathan.libby@yahoo.ca] (mailto:jonathan.libby@yahoo.ca?Subject=jQuery-Knob-Countdown%20on%20GitHub&Body=Hello%2C%20I%20have%20a%20question%2C%20comment%2C%20or%20concern%20about%20jQuery-Knob-Countdown%20on%20GitHub%3A%0A%0A%0AThanks%21).
+* I can be reached for specific help topics directly at [j@thelibbster.com] (mailto:j@thelibbster.com?Subject=jQuery-Knob-Countdown%20on%20GitHub&Body=Hello%2C%20I%20have%20a%20question%2C%20comment%2C%20or%20concern%20about%20jQuery-Knob-Countdown%20on%20GitHub%3A%0A%0A%0AThanks%21).
